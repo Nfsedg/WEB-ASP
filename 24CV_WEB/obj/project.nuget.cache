@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2yxEHBsS5f+Jahe1xeS1KewZDjeQp/+el6afKkjWyAwpjBrx1bz8xHUK4SY/Ez3DOggKB3OouMKCaQTLPEe//w==",
+  "dgSpecHash": "tl4v+sxw2bRPdlE3ZHmcMEJU9tW2MbatHCSMDTbjizg4lUREft11Uq6W9JQ23kNhbrySxs2tUyW9TxjgeevPnw==",
   "success": true,
   "projectFilePath": "/Users/edgarprincipal/Projects/24CV_WEB/24CV_WEB/24CV_WEB.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/edgarprincipal/.nuget/packages/bootstrap/5.3.2/bootstrap.5.3.2.nupkg.sha512"
+  ],
   "logs": []
 }

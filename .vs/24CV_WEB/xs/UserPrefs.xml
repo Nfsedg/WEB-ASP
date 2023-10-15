@@ -1,4 +1,36 @@
 ﻿<Properties StartupConfiguration="{C07B3B5A-2955-46D7-9638-A141AF4EB93B}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.24CV__WEB PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="24CV_WEB/Controllers/FormulariosController.cs">
+    <Files>
+      <File FileName="24CV_WEB/Models/EmailViewModel.cs" Line="8" Column="39" IsPinned="True" />
+      <File FileName="24CV_WEB/Controllers/HomeController.cs" />
+      <File FileName="24CV_WEB/Controllers/FormulariosController.cs" Line="35" Column="52" />
+      <File FileName="24CV_WEB/Views/Formularios/Index.cshtml" />
+      <File FileName="24CV_WEB/Views/Shared/_Layout.cshtml" />
+      <File FileName="24CV_WEB/Models/ErrorViewModel.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="24CV_WEB" expanded="True">
+            <Node name="24CV_WEB" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="FormulariosController.cs" selected="True" />
+              </Node>
+              <Node name="Examples" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.24CV__WEB FirstBuild="True" />
 </Properties>

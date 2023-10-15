@@ -1,0 +1,34 @@
+﻿@model _24CV_WEB.Models.EmailViewModel
+
+<div class="row">
+    @if (TempData["Email"] != null)
+        {
+            <div class="alert alert-success">
+                Se ha recibido la información del correo @TempData["Email"]<br />
+                <p class="text-sm-center">@TempData["Comentario"]</p>
+            </div>
+        }
+    <div class="col-12">
+        <h2 class="text-center">
+            Ejemplo de envio de información
+        </h2>
+        <p>Envío de formualrio pasando datos de la vista al controlador</p>
+    </div>
+    <div class="col-8">
+        <form asp-action="EnviarInformacion" asp-controller="Formularios" method="post">
+            <div class="mb-3">
+                <label>Email</label>
+                <input type="email" asp-for="Email" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label>Comentario</label>
+                <textarea asp-for="Comentario" class="form-control" rows="4"></textarea>
+                <button class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-4">
+        <h3 class="text-center">Enviar información al correo capturado</h3>
+        <p>se enviará un correo con la información capturada.</p>
+    </div>
+</div>

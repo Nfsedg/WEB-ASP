@@ -1,12 +1,54 @@
-﻿<div>
-    <form>
-        <div class="mb-3">
+﻿@model _24CV_WEB.Models.InformacionViewModel
+
+<div>
+    @if (TempData["Email"] != null)
+    {
+        <div class="alert alert-success">
+            Se ha recibido la información del correo @TempData["Email"] con la siguiente información:
+            <p class="text-sm-start">@TempData["Nombre"]</p>
+            <p class="text-sm-start">@TempData["Apellidos"]</p>
+            <p class="text-sm-start">@TempData["FechaNac"]</p>
+            <p class="text-sm-start">@TempData["Turno"]</p>
+            <p class="text-sm-start">@TempData["Comentario"]</p>
+        </div>
+    }
+    <div>
+        <h2 class="text-center">Envío de información por Email</h2>
+        <p>Ingresa tu información para envíar por correo electrónico</p>
+    </div>
+    <form asp-action="EnviarInformacion" asp-controller="Contacto" method="post" class="container-xxl">
+        <div class="col col-lg-2">
             <label>Email</label>
             <input type="text" name="Email" />
         </div>
-        <div class="mb-3">
+        <div class="col col-lg-2">
+            <label>Nombre</label>
+            <input type="text" name="Nombre" />
+        </div>
+        <div class="col col-lg-2">
+            <label>Apellidos</label>
+            <input type="text" name="Apellidos" />
+        </div>
+        <div class="col col-lg-2">
+            <label>Fecha de nacimiento</label>
+            <input placeholder="dd/mm/aaaa" type="date" name="FechaNac" />
+        </div>
+        <div>
+            <label>Turno</label>
+            <div>
+                <div>
+                    <input type="radio" id="Matutino" name="Turno" value="Matutino" />
+                    <label for="Matutino">Matutino</label>
+                </div>
+                <div>
+                    <input type="radio" name="Turno" value="Vespertino" id="Vespertino" />
+                    <label for="Vespertino">Vespertino</label>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-2">
             <label>Comentario</label>
-            <textarea name="Comentario" rows="4"></textarea>
+            <textarea name="Comentario" rows="4" cols="50"></textarea>
         </div>
         <button class="btn btn-primary">Enviar</button>
     </form>
